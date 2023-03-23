@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Leinster</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Leinster.svg">
+  <br>
+  <h2>Counties in connaught</h2>
+  <ul>
+    <li *ngFor="let c of counties">{{c}}</li>
+  </ul>
+  <ion-button (click)="onButtonClick()">Go To Counties</ion-button>
+</ion-content>
